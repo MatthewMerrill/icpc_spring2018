@@ -1,0 +1,20 @@
+<p>You had been exploring an ancient temple when you encountered a sealed, jewel-encrusted door. Next to the doorway lies nine candles arranged in a three-by-three grid. In order to unseal the door, all nine candles have to be lit.</p>
+<p>You noticed a strange property about these candles. Whenever you lit or extinguished a candle, any candles directly adjacent to (e.g., to the left, right, top, or bottom of) that candle would also flip their state from lit to unlit or from unlit to lit, depending on what they were before. This effect did not "wrap around." For example, when you lit the top-left candle, the candles directly below and to the right of it would flip their state.</p>
+<p>Given a certain candle pattern, you began to wonder of the minimum amount of moves it would take to get all nine candles to be lit, given that a move consists of lighting or extinguishing one candle.</p>
+
+<h4>Input</h4>
+<p>The input to your program will be a 3x3 grid consisting of the characters '.' or '+'. A period indicates an extinguished candle and a plus sign indicates a lit candle. The first two candles on a line are followed by a space, and the third candle is followed by a newline.</p>
+
+<h4>Output</h4>
+<p>Output the minimum number of moves required to have all nine candles be lit at once.</p>
+
+<div class="descriptionIO">
+<pre>
+. . .
++ + .
++ . .
+</pre>
+<pre>
+5
+</pre>
+</div>

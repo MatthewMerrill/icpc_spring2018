@@ -1,0 +1,10 @@
+id: 7
+order_index: 7
+
+title: 'Cloistered Candles'
+description_file: 'candles.html'
+color: '#ffae42'
+
+algorithmic_problem {
+  validator_scanner {}
+}
