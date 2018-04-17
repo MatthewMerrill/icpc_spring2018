@@ -1,10 +1,11 @@
-id: 1
-order_index: 1
+id: -1
+order_index: -1
 
 title: 'Practice Problem'
 description_file: 'example.html'
-color: '#ccbbaa'
+color: '#fff4d8'
 
 algorithmic_problem {
+  test_case_directory: 'example/'
   validator_scanner {}
 }

@@ -1,0 +1,10 @@
+id: 1
+order_index: 1
+
+title: 'Wacky Weights'
+description_file: 'wackyweights.html'
+color: '#ccbbaa'
+
+algorithmic_problem {
+  validator_scanner {}
+}

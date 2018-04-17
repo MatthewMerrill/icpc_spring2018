@@ -1,0 +1,51 @@
+<p>There are N weights and a balance scale sitting on a table in front of you.
+  N-1 of the weights weigh 10 grams, but 1 of them weighs 11 grams. Ultimately,
+  your goal is to determine which weight is the one that is 11 grams.</p>
+
+<p>You can place any number of weights on the left and right sides of the scale
+  (but you must place the same number on both the left and right side). Assume
+  you place M weights on the left, M on the right, and leave N-2M on the table:
+</p>
+
+<ol>
+  <li>If the scale leans left, you know the heavier weight is one of the M on the left.</li>
+  <li>If the scale leans left, you know the heavier weight is one of the M on the right.</li>
+  <li>If the scale stays balanced, you know the heaver weight is one of the N-2M on the table.
+</ol>
+
+<p>Given a number of weights 1 <= N <= 2000, you want to find the 11 gram weight
+  using the scale as few times as possible. What is the most times you must use
+  the scale?</p>
+
+<h4>Input</h4>
+
+<p>The first line will contain <em>T</em> - the number of test cases to follow.
+  Each of the <em>T</em> remaining lines will contain a singular number
+  <em>N</em> - the number of weights on the table.
+
+<h4>Output</h4>
+
+<p>For each test case, print a single number on its own line: the maximum number
+  of times you must use the scale if you employ an optimal strategy.</p>
+
+<div class="descriptionIO">
+  <pre>
+4
+1
+2
+5
+9
+  </pre>
+  <pre>
+1
+1
+2
+2
+  </pre>
+</div>
+
+<p>For the third test case (N = 5), the optimal strategy is to first place 2
+  weights on the left side and 2 weights on the right side. If the scale tips,
+  you must use the scale one more time to determine which of the 2 on that side
+  it is. If it does not tip, then you know it is the 1 that you did not place on
+  the scale.</p>
