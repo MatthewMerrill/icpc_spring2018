@@ -1,0 +1,4 @@
+3
+setI A 3
+setR B A
+mulR B B

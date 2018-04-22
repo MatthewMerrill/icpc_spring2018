@@ -1,0 +1,32 @@
+<p>You have been hired to write a simulation program for Riverside Hall's legendary elevators! Your simulator will be fed a list of instructions on how the elevators are to move and should print a graphic showing the elevator's positions at the end.</p>
+<p>Riverside contains two elevators, designated "A" and "B". Your simulator should keep track of the floor that each elevator rests on. The elevators both start off at the ground (0<sup>th</sup>) floor, and the elevators can go up to (and including) the 4<sup>th</sup> building floor. If at any time an elevator is outside of this range, you should interpret it as the elevator "wrapping around". For example, if the program claims that elevator A is on floor -1, that means elevator A is actually on floor 4.</p>
+
+<h4>Input</h4>
+<p>The first line of input contains one integer <i>n</i>, the number of following instructions. You can assume that 1 &le; n &le; 100.</p>
+<p>Each following line contains an operation, the elevator to perform the operation on, and a parameter. If the operation ends in the letter "I" (upper case i; rhymes with eye, not ell), then the parameter is an integer in the range [1, 1000]. If the operation ends in "R", then the parameter is either the letter A or B. This parameter represents the current floor that elevator A or B rests on.</p>
+<p>The possible instructions are setI, setR, addI, addR, subI, subR, mulI, mulR. These instructions will always appear with this exact capitalization.
+The set operation will move the specified elevator to the parameter's value.
+The add operation will add the parameter's value to the elevator's current floor.
+The sub operation will subtract the parameter's value from the elevator's current floor.
+The mul operation will multiply the specified elevator's floor by the parameter's value.</p>
+<p>Remember that you should be wrapping the elevator's floor value after each operation. For example, if elevator A is currently on floor 2, and you encounter the instruction <b>addI A 3</b>, elevator A is now on floor 0.</p>
+
+<h4>Output</h4>
+<p>Your simulator should output two vertical lines, with the left line representing elevator A and the right line representing elevator B. The two lines are seperated by a space. A pipe character indicates an empty floor, and a pound sign represents the floor containing the elevator. In the example below, elevator A is on floor 4 and elevator B is on floor 0.</p>
+<div class="descriptionIO">
+<pre>
+5
+setI A 3
+setI B 3
+subR B A
+addI A 1
+mulR B A
+</pre>
+<pre>
+# |
+| |
+| |
+| |
+| #
+</pre>
+</div>

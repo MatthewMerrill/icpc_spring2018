@@ -1,0 +1,6 @@
+5
+setI A 3
+setI B 3
+subR B A
+addI A 1
+mulR B A
