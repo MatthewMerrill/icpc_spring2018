@@ -6,5 +6,7 @@ description_file: 'candles.html'
 color: '#ffae42'
 
 algorithmic_problem {
+  test_case_directory: 'candles/'
+  time_limit_seconds: 15
   validator_scanner {}
 }

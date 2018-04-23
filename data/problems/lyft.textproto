@@ -1,10 +1,12 @@
 id: 4
 order_index: 4
 
-title: 'Lyft'
+title: 'Riverside Lyft'
 description_file: 'lyft.html'
 color: '#00e6ac'
 
 algorithmic_problem {
+  test_case_directory: 'lyft/'
+  time_limit_seconds: 15
   validator_scanner {}
 }
