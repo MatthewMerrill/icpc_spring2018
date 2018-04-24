@@ -1,0 +1,28 @@
+language {
+  name: 'c'
+  compile: 'sandbox gcc {{FILE_NAME}} -o ./{{BASE_NAME}}'
+  run: 'sandbox ./{{BASE_NAME}}'
+}
+language {
+  name: 'c++'
+  compile: 'sandbox g++ {{FILE_NAME}} -o ./{{BASE_NAME}}'
+  run: 'sandbox ./{{BASE_NAME}}'
+}
+language {
+  name: 'rust'
+  compile: 'sandbox rustc {{FILE_NAME}} -o ./{{BASE_NAME}}'
+  run: 'sandbox ./{{BASE_NAME}}'
+}
+language {
+  name: 'java'
+  compile: 'sandbox javac {{FILE_NAME}}'
+  run: 'sandbox java {{BASE_NAME}}'
+}
+language {
+  name: 'python2'
+  run: 'sandbox python2 {{FILE_NAME}}'
+}
+language {
+  name: 'python3'
+  run: 'sandbox python3 {{FILE_NAME}}'
+}

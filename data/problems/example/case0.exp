@@ -1,8 +1,8 @@
-N = 3    Sum = 6
-N = 6    Sum = 21
-N = 10   Sum = 55
-N = 100  Sum = 5050
-N = 1000 Sum = 500500
-N = -3   Sum = -5
-N = -6   Sum = -20
-N = -10  Sum = -54
+N = 3	Sum = 6
+N = 6	Sum = 21
+N = 10	Sum = 55
+N = 100	Sum = 5050
+N = 1000	Sum = 500500
+N = -3	Sum = -5
+N = -6	Sum = -20
+N = -10	Sum = -54

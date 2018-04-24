@@ -7,5 +7,6 @@ color: '#fff4d8'
 
 algorithmic_problem {
   test_case_directory: 'example/'
+  time_limit_seconds: 15
   validator_scanner {}
 }

@@ -2,8 +2,8 @@
 def sumRange(n):
     if n == 0:
         return 0
-    #elif n < 0:
-    #    return -sumRange(-n) + 1
+    elif n < 0:
+       return -sumRange(-n) + 1
     else:
         return n * (n + 1) // 2
 
