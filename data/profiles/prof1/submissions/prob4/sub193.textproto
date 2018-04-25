@@ -1,0 +1,55 @@
+problem_id: 4
+team_id: 1
+submission_time_seconds: 193
+judge_id: 1612
+judgement: JUDGEMENT_FAILURE
+judgement_message: "Wrong Answer"
+algorithmic_submission {
+  file_name: "example_solution.py"
+  source_code: "\ndef sumRange(n):\n    if n == 0:\n        return 0\n    elif n < 0:\n       return -sumRange(-n) + 1\n    else:\n        return n * (n + 1) // 2\n\nn = int(input())\nwhile n != 0:\n    print(\"N = %d\\tSum = %d\" % (n, sumRange(n)))\n    n = int(input())\n"
+  language: "python3"
+  compile_result {
+  }
+  case_results {
+    key: 0
+    value {
+      result_out: "N = 5\tSum = 15\n"
+      result_err: "Traceback (most recent call last):\n  File \"example_solution.py\", line 13, in <module>\n    n = int(input())\nValueError: invalid literal for int() with base 10: \'setI A 3\'\n"
+      exit_code: 1
+    }
+  }
+  case_results {
+    key: 1
+    value {
+      result_out: "N = 2\tSum = 3\n"
+      result_err: "Traceback (most recent call last):\n  File \"example_solution.py\", line 13, in <module>\n    n = int(input())\nValueError: invalid literal for int() with base 10: \'subI A 5\'\n"
+      exit_code: 1
+    }
+  }
+  case_results {
+    key: 2
+    value {
+      result_out: "N = 1\tSum = 1\n"
+      result_err: "Traceback (most recent call last):\n  File \"example_solution.py\", line 13, in <module>\n    n = int(input())\nValueError: invalid literal for int() with base 10: \'mulI A 1000\'\n"
+      exit_code: 1
+    }
+  }
+  case_results {
+    key: 3
+    value {
+      result_out: "N = 100\tSum = 5050\n"
+      result_err: "Traceback (most recent call last):\n  File \"example_solution.py\", line 13, in <module>\n    n = int(input())\nValueError: invalid literal for int() with base 10: \'addI A 1000\'\n"
+      exit_code: 1
+    }
+  }
+  case_results {
+    key: 4
+    value {
+      result_out: "N = 3\tSum = 6\n"
+      result_err: "Traceback (most recent call last):\n  File \"example_solution.py\", line 13, in <module>\n    n = int(input())\nValueError: invalid literal for int() with base 10: \'setI A 3\'\n"
+      exit_code: 1
+    }
+  }
+  preliminary_judgement: JUDGEMENT_FAILURE
+  preliminary_judgement_message: "Runtime Error"
+}

@@ -1,0 +1,15 @@
+problem_id: 1
+team_id: 1
+submission_time_seconds: 36
+judge_id: 1612
+judgement: JUDGEMENT_FAILURE
+judgement_message: "Wrong Answer"
+algorithmic_submission {
+  file_name: "seashells_solution.py"
+  source_code: "N = int(input())\nL = map(int, input().split())\n\ndef ans(N, L):\n    for i in range(1, N):\n        if L[i] > L[i - 1]:\n            return false\n    return true\n\nprint(\"Sorting Successful\" if ans(N, L) else \"Sad Sorting, Sally\")\n"
+  language: "python3"
+  compile_result {
+  }
+  preliminary_judgement: JUDGEMENT_SUCCESS
+  preliminary_judgement_message: "Correct Answer"
+}

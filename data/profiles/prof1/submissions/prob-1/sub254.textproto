@@ -1,0 +1,21 @@
+problem_id: -1
+team_id: 1
+submission_time_seconds: 254
+judge_id: 1612
+judgement: JUDGEMENT_SUCCESS
+judgement_message: "Correct Answer"
+algorithmic_submission {
+  file_name: "example_solution.py"
+  source_code: "\ndef sumRange(n):\n    if n == 0:\n        return 0\n    elif n < 0:\n       return -sumRange(-n) + 1\n    else:\n        return n * (n + 1) // 2\n\nn = int(input())\nwhile n != 0:\n    print(\"N = %d\\tSum = %d\" % (n, sumRange(n)))\n    n = int(input())\n"
+  language: "python3"
+  compile_result {
+  }
+  case_results {
+    key: 0
+    value {
+      result_out: "N = 3\tSum = 6\nN = 6\tSum = 21\nN = 10\tSum = 55\nN = 100\tSum = 5050\nN = 1000\tSum = 500500\nN = -3\tSum = -5\nN = -6\tSum = -20\nN = -10\tSum = -54\n"
+    }
+  }
+  preliminary_judgement: JUDGEMENT_SUCCESS
+  preliminary_judgement_message: "Correct Answer"
+}

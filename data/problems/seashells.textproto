@@ -1,0 +1,11 @@
+id: 1
+order_index: 1
+
+title: 'Sea Shells'
+description_file: 'seashells.html'
+color: '#ccbbaa'
+
+algorithmic_problem {
+  test_case_directory: 'seashells/'
+  validator_scanner {}
+}

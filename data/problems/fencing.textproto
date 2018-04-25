@@ -1,0 +1,12 @@
+id: 8
+order_index: 8
+
+title: 'Fencing Finances'
+description_file: 'fencing.html'
+color: '#00e6ac'
+
+algorithmic_problem {
+  test_case_directory: 'fencing/'
+  time_limit_seconds: 15
+  validator_scanner {}
+}

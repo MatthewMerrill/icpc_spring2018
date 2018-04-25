@@ -1,0 +1,48 @@
+<p>Something that classical composers used to compose into their compositions was a fugue.
+  There are many types of fugues. Repeating a string of notes but in a different octave(the same notes are played but in a different pitch) is one type of fugue.
+  Repeating a string of notes backwards is also a fugue.
+  Combining multiple fugue techniques is also a fugue.</p>
+
+<p>You need to write a program that can detect if two phrases of notes are one of these fugues.<p>
+
+<ol>
+<li>The notes are the same but the entire string is shifted to a single different octave.</li>
+<li>The notes are reversed.</li>
+<li>Both a and b.</li>
+</ol>
+
+<p>For this problem, notes will be represented by an integer. There are only 8 notes (1-8), but many octaves.
+  So 1 is the same note as 9 and 17, etc. A "0" means that no note is played at that time.</p>
+
+<h4>Input</h4>
+<p>
+  The first input will be the number of notes in each string.
+  The second line will be a string of space seperated integers between 0 and 72 representing the first string of notes.
+  The third line will be a string of space seperated integers between 0 and 72 representing the second string of notes.
+  Each line will have up to 8 integers, and each line will only have numbers from one octave or 0's.
+  <p>
+
+<h4>Output</h4>
+<p>If the second note string is a fugue of the first note string: print "true"; if it's not a fugue: print "false".</p>
+
+<div class="descriptionIO">
+<pre>
+4
+1 2 3 4
+9 10 11 12
+</pre>
+<pre>
+true
+</pre>
+</div>
+
+<div class="descriptionIO">
+<pre>
+4
+1 2 1 2
+2 1 2 1
+</pre>
+<pre>
+true
+</pre>
+</div>
