@@ -1,0 +1,12 @@
+id: 6
+order_index: 6
+
+title: 'Game of Life'
+description_file: 'gameoflife.html'
+color: '#901901'
+
+algorithmic_problem {
+  test_case_directory: 'gameoflife/'
+  time_limit_seconds: 15
+  validator_scanner {}
+}
