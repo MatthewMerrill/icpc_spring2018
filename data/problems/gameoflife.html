@@ -1,6 +1,28 @@
 <p>
     Conway's Game of Life is a cellular automata which displays interesting
-    phenomena.
+    phenomena. By using only a few simple rules it manages to create chaotic
+    results. Surprisingly, it's also Turing complete, which means that anything
+    that can be computed on a Turring machine can also be computed in Conway's
+    Game of Life. As a result, you want to make a brand new programming language
+    based on Conway's Game of Life, but first, you need to create a program that
+    can simulate the game.
+</p>
+<p>
+    The game takes place on a grid of cells called the universe with each cell
+    being in one of two states: alive or dead. Each tick, the universe updates
+    based on a few simple rules:
+    <ul>
+        <li>Any live cell with fewer than two live neighbours dies, as if caused
+            by underpopulation.</li>
+        <li>Any live cell with two or three live neighbours lives on to the next
+            generation.</li>
+        <li>Any live cell with more than three live neighbours dies, as if by
+            overpopulation.</li>
+        <li>Any dead cell with exactly three live neighbours becomes a live
+            cell, as if by reproduction.</li>
+    </ul>
+    For the purposes of your programming language, all cells outside the
+    universe are considered dead.
 </p>
 
 <h4>Input</h4>
