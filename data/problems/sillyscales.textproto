@@ -1,0 +1,12 @@
+id: 1
+order_index: 1
+
+title: 'Silly Scales'
+description_file: 'sillyscales.html'
+color: '#109109'
+
+algorithmic_problem {
+  test_case_directory: 'sillyscales/'
+  time_limit_seconds: 15
+  validator_scanner {}
+}
