@@ -2,10 +2,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#define FLIP(i) (new_board ^= 1 << i)
-
 int main() {
-    const uint16_t board = 0b111111111;
+    const uint16_t board = 0b000110100;
 
     uint8_t min_moves = UINT8_MAX;
 
@@ -19,15 +17,15 @@ int main() {
                 move_count++;
 
                 switch (i) {
-                case 0: FLIP(0); FLIP(1); FLIP(3); break;
-                case 1: FLIP(0); FLIP(1); FLIP(2); FLIP(4); break;
-                case 2: FLIP(1); FLIP(2); FLIP(5); break;
-                case 3: FLIP(0); FLIP(3); FLIP(4); FLIP(6); break;
-                case 4: FLIP(1); FLIP(3); FLIP(4); FLIP(5); FLIP(7); break;
-                case 5: FLIP(2); FLIP(4); FLIP(5); FLIP(8); break;
-                case 6: FLIP(3); FLIP(6); FLIP(7); break;
-                case 7: FLIP(4); FLIP(6); FLIP(7); FLIP(8); break;
-                case 8: FLIP(5); FLIP(7); FLIP(8); break;
+                case 0: new_board ^= 0b000001011; break;
+                case 1: new_board ^= 0b000010111; break;
+                case 2: new_board ^= 0b000100110; break;
+                case 3: new_board ^= 0b001011001; break;
+                case 4: new_board ^= 0b010111010; break;
+                case 5: new_board ^= 0b100110100; break;
+                case 6: new_board ^= 0b011001000; break;
+                case 7: new_board ^= 0b111010000; break;
+                case 8: new_board ^= 0b110100000; break;
                 }
             }
 
