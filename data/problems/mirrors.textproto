@@ -1,0 +1,12 @@
+id: 8
+order_index: 8
+
+title: 'Murderous Mirrors'
+description_file: 'mirrors.html'
+color: '#00e6ac'
+
+algorithmic_problem {
+  test_case_directory: 'mirrors/'
+  time_limit_seconds: 15
+  validator_scanner {}
+}
