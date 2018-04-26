@@ -7,6 +7,6 @@ color: '#00e6ac'
 
 algorithmic_problem {
   test_case_directory: 'lyft/'
-  time_limit_seconds: 15
+  time_limit_seconds: 60
   validator_scanner {}
 }

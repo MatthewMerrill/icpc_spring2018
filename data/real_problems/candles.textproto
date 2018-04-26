@@ -1,5 +1,5 @@
-id: 7
-order_index: 7
+id: 6
+order_index: 6
 
 title: 'Cloistered Candles'
 description_file: 'candles.html'
@@ -7,6 +7,6 @@ color: '#ffae42'
 
 algorithmic_problem {
   test_case_directory: 'candles/'
-  time_limit_seconds: 15
+  time_limit_seconds: 30
   validator_scanner {}
 }

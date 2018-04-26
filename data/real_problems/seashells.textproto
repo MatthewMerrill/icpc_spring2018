@@ -7,5 +7,6 @@ color: '#ccbbaa'
 
 algorithmic_problem {
   test_case_directory: 'seashells/'
+  time_limit_seconds: 60
   validator_scanner {}
 }

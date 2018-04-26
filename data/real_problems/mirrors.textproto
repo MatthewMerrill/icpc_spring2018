@@ -7,6 +7,6 @@ color: '#00e6ac'
 
 algorithmic_problem {
   test_case_directory: 'mirrors/'
-  time_limit_seconds: 15
+  time_limit_seconds: 30
   validator_scanner {}
 }

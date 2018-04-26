@@ -6,7 +6,6 @@ description_file: 'gameoflife.html'
 color: '#901901'
 
 algorithmic_problem {
-  test_case_directory: 'gameoflife/'
-  time_limit_seconds: 15
+  time_limit_seconds: 30
   validator_scanner {}
 }
