@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -v `pwd`:/sandbox --rm sandbox $@
+docker run -i -v `pwd`:/sandbox --rm sandbox $@
