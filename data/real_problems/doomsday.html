@@ -9,18 +9,17 @@
 <h4>Input</h4>
 <p>
   The first line will be 3 space-separated integers:
-  The first is the number of buttons.
-  The second is the amount of time left on the Big-bad Doomsday Device<sup>(tm)</sup>'s timer.
-  The third is your starting location.
+  The number of buttons.
+  The amount of time left on the timer.
+  Your starting location.
   The follwing lines will contain 3 space-separated integers. 
-  The first integer is the number representing the button you start at.
-  The second number is the number representing the button you travel to.
-  The third number is the total cost in time it takes to travel to and press the button.
+  The location of the button you will travel from.
+  The location of the button you will travel to.
+  The total cost in time it takes to travel to and press the button.
   <p>
 
-<p>When you get to a line that is only "-1", that is the last line of input. This line is only to signify the end of input.</p>
-
-<p>The maximum number of buttons is 10. There is no real limit to what the time units will be (although they will not go out of bounds of what java int allows).</p>
+<p>
+  When you get to a line that is only "-1", that is the last line of input. This line is only to signify the end of input. To be clear, the cost to to travel an edge to a button to press is instantaneous at the time of traveling that path, and end at the time of pressing the button. The maximum number of buttons is 10. There is no need to worry about the time of the buttons.</p>
 
 <h4>Output</h4>
 <p>
