@@ -1,0 +1,12 @@
+id: 7
+order_index: 7
+
+title: 'Doomsday Device'
+description_file: 'doomsday.html'
+color: '#00e6ac'
+
+algorithmic_problem {
+  test_case_directory: 'doomsday/'
+  time_limit_seconds: 60
+  validator_scanner {}
+}

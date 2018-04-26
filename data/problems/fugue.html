@@ -6,24 +6,25 @@
 <p>You need to write a program that can detect if two phrases of notes are one of these fugues.<p>
 
 <ol>
-<li>The notes are the same but the entire string is shifted to a single different octave.</li>
+<li>The notes are the same but the entire string is shifted to a different octave.</li>
 <li>The notes are reversed.</li>
 <li>Both a and b.</li>
 </ol>
 
 <p>For this problem, notes will be represented by an integer. There are only 8 notes (1-8), but many octaves.
-  So 1 is the same note as 9 and 17, etc. A "0" means that no note is played at that time.</p>
+  So 1 is the same note as 9 and 17, etc. A 0 means that no note is played at that time (a rest).</p>
 
 <h4>Input</h4>
 <p>
-  The first input will be the number of notes in each string.
-  The second line will be a string of space seperated integers between 0 and 72 representing the first string of notes.
-  The third line will be a string of space seperated integers between 0 and 72 representing the second string of notes.
-  Each line will have up to 8 integers, and each line will only have numbers from one octave or 0's.
-  <p>
+  The first input will be the number of notes in each phrase, N.
+  The second line will be a list of N space-separated integers between 0 and 72 representing the first phrase of notes, P<sub>1..N</sub>.
+  The third line will be a string of N space-separated integers between 0 and 72 representing the second phrase of notes, F<sub>1..N</sub>.
+  1 <= N <= 8, and the non-rest notes of each phrase will share the same octave.
+</p>
+
 
 <h4>Output</h4>
-<p>If the second note string is a fugue of the first note string: print "true"; if it's not a fugue: print "false".</p>
+<p>If the second phrase is a fugue of the first print "true"; if it's not, print "false".</p>
 
 <div class="descriptionIO">
 <pre>
@@ -44,5 +45,16 @@ true
 </pre>
 <pre>
 true
+</pre>
+</div>
+
+<div class="descriptionIO">
+<pre>
+4
+1 1 0 2
+2 1 0 1
+</pre>
+<pre>
+false
 </pre>
 </div>
