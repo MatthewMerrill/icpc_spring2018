@@ -1,35 +1,35 @@
 <p>
   Mr. Big-bad has started the timer for his Big-bad Doomsday Device<sup>(tm)</sup>.
-  Thankfully, he left scattered throughout the continental United States a number of buttons that prolong the Big-bad Doomsday Device<sup>(tm)</sup> from exploding.
-  You know where they all are, but you can't press the same button twice in a row. Also, you are the only one that can press the buttons. For... reasons...
-  Your job is to find a way to indefinitely save Earth by finding a sequence of button presses that gains you time if you account for the time it takes to travel in between each button.</p>
+  Thankfully, he left (scattered throughout the continental United States) buttons that delay the explosion of the Big-bad Doomsday Device<sup>(tm)</sup>.
+  You know where they all are, but you can't press the same button twice in a row. Also, you are the only one that can press the buttons. For... reasons...</p>
+ 
+ <p>
+  Your job is to save Earth by finding a way to indefinitely delay the device. Find a sequence of button presses that will accomplish this (accounting for the time it takes to travel in between each button).</p>
 
 <h4>Input</h4>
 <p>
-  The first line will be 3 space-separated integers.
-  The first is the number of buttons, N.
+  The first line will be 3 space-separated integers:
+  The first is the number of buttons.
   The second is the amount of time left on the Big-bad Doomsday Device<sup>(tm)</sup>'s timer.
   The third is your starting location.
   <p>
 
 <p>
-  The next N lines will be 3 space-separated integers that represent a path from one button to another
-    with the total time it takes to get there and press the new button.
+  The follwing lines will contain 3 space-separated integers. 
   The first integer is the number representing the button you start at.
-  The second number is the number representing the button you are traveling to.
-  The third number is the total cost in time it takes to travel to and press the
-    button (the travel time - the amount of time pressing the button adds to the timer).
+  The second number is the number representing the button you travel to.
+  The third number is the total cost in time it takes to travel to and press the button.
   <p>
 
-<p>When you get to a line that is only "-1", that is the last line. There will be no more input after that.</p>
+<p>When you get to a line that is only "-1", that is the last line of input. This line is only to signify the end of input.</p>
 
 <p>The maximum number of buttons is 10. There is no real limit to what the time units will be (although they will not go out of bounds of what java int allows).</p>
 
 <h4>Output</h4>
 <p>
-  If you can find a path such that when you make one cycle of that path the
-  timer on the Big-bad Doomsday Device<sup>(tm)</p> is increased and the timer
-  never went below zero while on the path, then print: "I can save the world".
+  If you can find a path such that when you make one cycle of that path, the
+  timer on the Big-bad Doomsday Device<sup>(tm)</p> is increased, and the timer
+  never went below zero while on the path, or traveling to that path, then print: "I can save the world".
   Otherwise, print: "The world is doomsdayed".
 </p>
 
