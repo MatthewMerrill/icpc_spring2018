@@ -3,7 +3,7 @@ order_index: 5
 
 title: 'Game of Life'
 description_file: 'gameoflife.html'
-color: '#901901'
+color: '#ffae42'
 
 algorithmic_problem {
   time_limit_seconds: 30

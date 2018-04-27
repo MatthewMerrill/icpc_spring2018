@@ -3,7 +3,7 @@ order_index: 7
 
 title: 'Doomsday Device'
 description_file: 'doomsday.html'
-color: '#00e6ac'
+color: '#b2b23e'
 
 algorithmic_problem {
   test_case_directory: 'doomsday/'

@@ -3,7 +3,7 @@ order_index: 8
 
 title: 'Murderous Mirrors'
 description_file: 'mirrors.html'
-color: '#00e6ac'
+color: '#e5e5e5'
 
 algorithmic_problem {
   test_case_directory: 'mirrors/'

@@ -3,7 +3,7 @@ order_index: 6
 
 title: 'Cloistered Candles'
 description_file: 'candles.html'
-color: '#ffae42'
+color: '#5805b7'
 
 algorithmic_problem {
   test_case_directory: 'candles/'

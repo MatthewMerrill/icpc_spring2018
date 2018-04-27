@@ -3,7 +3,7 @@ order_index: 3
 
 title: 'Fugue State'
 description_file: 'fugue.html'
-color: '#00e6ac'
+color: '#109109'
 
 algorithmic_problem {
   test_case_directory: 'fugue/'

@@ -3,7 +3,7 @@ order_index: 2
 
 title: 'Riverside Lyft'
 description_file: 'lyft.html'
-color: '#00e6ac'
+color: '#3281ff'
 
 algorithmic_problem {
   test_case_directory: 'lyft/'

@@ -3,7 +3,7 @@ order_index: 1
 
 title: 'Sea Shells'
 description_file: 'seashells.html'
-color: '#ccbbaa'
+color: '#901901'
 
 algorithmic_problem {
   test_case_directory: 'seashells/'

@@ -3,7 +3,7 @@ order_index: 4
 
 title: 'Silly Scales'
 description_file: 'sillyscales.html'
-color: '#109109'
+color: '#ed82e0'
 
 algorithmic_problem {
   test_case_directory: 'sillyscales/'
