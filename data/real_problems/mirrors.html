@@ -1,15 +1,16 @@
 <p>Hard work pays off!
-    Torbjorn has equipped his turret with Winston's lightning gun.
+    Torbjorn has equipped his turret with a laser-emitting stun gun.
     He enters a room with mirrors on the walls and places the turret near the
     enemy Sombra's teleporter device. When Sombra teleports, the turret will
-    trigger the lightning gun to send out electricity in every direction. The
-    lightning bolts have a maximum range R meters traveled after leaving the
+    trigger and shoot a beam of elecctricity to try to stun the Sombra.
+    The laser beams have a maximum range R meters traveled after leaving the
     turret.
     </p>
 
 <p>
-  Torbjorn wants to know: for a given room, turret position, and sombra
-  position, and range R, how many beams will hit Sombra? Assume that a beam
+  Torbjorn wants to know: for a given room, turret position, sombra
+  position, and range R, how many angles exist such that a beam fired in that
+  direction would hit Sombra? Assume that a beam
   hitting a vertical/horizontal wall exactly inverts the vertical/horizontal
   component of the beam's velocity, respectively.
   </p>
@@ -17,16 +18,18 @@
 <h4>Input</h4>
 <p>
   The first line contains two positive integers: the width and height of the room.
-  The second line contains two positive integers: the 0-indexed x and y position of Torbjorn's turret.
-  The third line contains two positiive integers: the 0-indexed x and y position of Sombra's teleporter.
-  The fourth and final line contains one non-negative float: the maximum distance a beam can travel.
+  The second line contains two positive integers: the x and y position of Torbjorn's turret in meters.
+  The third line contains two positiive integers: the x and y position of Sombra's teleporter in meters.
+  The fourth and final line contains one non-negative float: the maximum distance a beam can travel in meters.
 </p>
 
 <h4>Output</h4>
 <p>Print a single integer: the number of angles which the turret can fire a beam
   and hit Sombra. Note: if a beam hits the turret or Sombra, it stops there.
   You cannot have a beam continue through an object then hit something else
-  behind it.<p>
+  behind it. Also, both objects are considered to have no "width". For a beam to
+  hit the object, it must be aimed exactly at the colliding object's
+  location in the room.</p>
 
 <div class="descriptionIO">
 <pre>
@@ -51,3 +54,10 @@
 11
 </pre>
 </div>
+
+<pre>
++-------+  Example Turret location 0, 0 and Sombra location (1, 1).
+|.  .  .|  The space between the dots and perceived distance
+|.  S  .|  between the turret and both the turret's reflections (to
+|T  .  .|  south or west) are equal to 1 meter.
++-------+</pre>
